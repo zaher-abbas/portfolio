@@ -1,8 +1,9 @@
-
-
 body {
     margin: 0;
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+
 }
+
 
 nav {
     display: flex;
@@ -22,7 +23,7 @@ nav {
 }
 
 nav a {
-    border-right: solid black;
+    border-right: solid black 0.1rem;
     padding: 1rem;
     text-decoration: none;
     color: black;
@@ -31,11 +32,11 @@ nav a {
 
 
 #logo-round {
-    background-color: wheat;
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
 }
+
 
 section img {
     border-radius: 50%;
@@ -57,15 +58,26 @@ section {
 
 #buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    text-align: center;
+    font-weight: bold;
 }
 
 .main-button {
-    padding: 1.5rem;
-    border: solid black;
+    width: 30%;
+    height: 100%;
+    padding: 3rem;
+    border: solid black 0.1rem;
     border-radius: 50%;
+    box-shadow:  5px 5px 5px;
+    transition: background-color 0.5s ease;
+
+}
+
+.main-button:hover {
+    background-color: white  !important;
+    cursor: pointer;
 }
 
 .main-button a {
@@ -75,9 +87,12 @@ section {
 
 }
 
-hr {
-    width: 90%;
+#line {
+    text-align: center;
 }
+
+
+
 #moi {
     width: 35%;
 }
