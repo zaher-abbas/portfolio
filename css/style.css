@@ -1,7 +1,10 @@
-body {
-    margin: 0;
-  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+html {
+    font-size: large;
+}
 
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
 
@@ -19,7 +22,7 @@ nav {
 
 #logo {
     gap: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 nav a {
@@ -47,31 +50,34 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
 }
 
+
+
 #buttons {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+    justify-content:space-evenly;
     font-weight: bold;
+    align-items: center;
+    gap: 1rem;
 }
 
 .main-button {
-    width: 30%;
-    height: 100%;
     padding: 3rem;
     border: solid black 0.1rem;
     border-radius: 50%;
     box-shadow:  5px 5px 5px;
     transition: background-color 0.5s ease;
+    text-align: center;
+    width: 33%;
 
 }
 
@@ -107,7 +113,7 @@ div img {
 }
 
 footer {
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
