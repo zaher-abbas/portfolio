@@ -13,12 +13,12 @@ nav {
 
 .nav-section {
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
 #logo {
     gap: 1rem;
+    font-size: 0.8rem;
 }
 
 nav a {
@@ -28,9 +28,7 @@ nav a {
     color: black;
 }
 
-p {
-    font-size: 0.9rem;
-}
+
 
 #logo-round {
     background-color: wheat;
