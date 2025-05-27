@@ -43,19 +43,19 @@ nav a {
 
 
 main {
-    margin: 2rem 0;
+    margin: 4rem 1rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 2rem;
     flex-wrap: wrap;
 
 }
 
 main section {
-    border: 2px solid transparent;
+    border: 4px solid transparent;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.5s ease;
-    border-radius: 8px;
+    border-radius: 15px;
     width: 35%;
     background-color: #e0f2fe;
 }
