@@ -1,85 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon Portfolio - Accueil</title>
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="nav-section" id="logo">
-                <div class="bg-success" id="logo-round"></div>
-                <h2>Zaher ABBAS</h3>
-                    <div>Développeur Web</div>
-            </div>
-            <div class="nav-section">
-                <a href="">CV</a>
-                <a  href="projets.html">Projets</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <div class="navbar-brand d-flex gap-2 align-items-center">
+            <div class="bg-success" id="logo-round"></div>
+            <h2>Zaher ABBAS</h2>
+            <span>Développeur Web</span>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projets.html">Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-<div class="container">
-        <hr>
+    <div class="container">
+      <hr />
     </div>
     <main>
-        <div id="moi">
-            <img src="images/moi.png" alt="">
+      <div id="moi">
+        <img src="images/moi.png" alt="Mon avatar ou image personnel" />
+      </div>
+      <section>
+        <h1>Salut...</h1>
+        <article>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </article>
+        <div id="buttons">
+          <div id="cv" class="container main-button bg-primary bg-gradient">
+            <a href="">CV</a>
+          </div>
+          <div
+            id="projets"
+            class="container main-button bg-success bg-gradient"
+          >
+            <a href="projets.html">Projets</a>
+          </div>
+          <div id="contact" class="container main-button bg-info bg-gradient">
+            <a href="contact.html">Contact</a>
+          </div>
         </div>
-        <section>
-            <h1>Salut...</h1>
-            <article>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </article>
-            <div id="buttons">
-                <div id="cv" class="container main-button bg-primary bg-gradient">
-                    <a href="">CV</a>
-                </div>
-                <div id="projets" class="container main-button bg-success bg-gradient">
-                    <a href="projets.html">Projets</a>
-                </div>
-                <div id="contact" class="container main-button bg-info bg-gradient">
-
-                    <a href="contact.html">Contact</a>
-
-                </div>
-            </div>
-
-        </section>
+      </section>
     </main>
     <div class="container">
-<hr>
+      <hr />
     </div>
 
     <footer>
-        <div class="footer-item">
-
-            <h4>Téléphone</h4>
-            <p>07 58 92 50 32</p>
-        </div>
-        <div class="footer-item">
-
-            <h4>Email</h4>
-            <a href="mailto:z.abbas83@yahoo.com">z.abbas83@yahoo.com</a>
-        </div>
-        <div class="footer-item">
-
-            <h4>Suivez-moi</h4>
-            <a href=""><img src="images/instagram.png" alt="lien vers mon compte Instagram"></a>
-            <a href="https://www.youtube.com/@creationartstudio12"><img src="images/youtube.png" alt="lien vers ma chaine YouTube"></a>
-
-        </div>
-        <div>
-            <p>© 2035 par Zaher ABBAS</p>
-        </div>
+      <div class="footer-item">
+        <h4>Téléphone</h4>
+        <p>07 58 92 50 32</p>
+      </div>
+      <div class="footer-item">
+        <h4>Email</h4>
+        <a href="mailto:z.abbas83@yahoo.com">z.abbas83@yahoo.com</a>
+      </div>
+      <div class="footer-item">
+        <h4>Suivez-moi</h4>
+        <a href=""
+          ><img src="images/instagram.png" alt="lien vers mon compte Instagram"
+        /></a>
+        <a href="https://www.youtube.com/@creationartstudio12"
+          ><img src="images/youtube.png" alt="lien vers ma chaine YouTube"
+        /></a>
+      </div>
+      <div>
+        <p>© 2035 par Zaher ABBAS</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

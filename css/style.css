@@ -25,11 +25,15 @@ nav {
     font-size: 0.9rem;
 }
 
-nav a {
+nav li {
     border-right: solid black 0.1rem;
     padding: 1rem;
     text-decoration: none;
     color: black;
+}
+
+span {
+    font-size: large;
 }
 
 
@@ -91,7 +95,6 @@ section {
 .main-button a {
     text-decoration: none;
     color: black;
-
 }
 
 #line {
