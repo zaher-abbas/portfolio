@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  margin: 0;
-  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    margin: 0;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
 
@@ -42,6 +42,20 @@ span {
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
+    animation: bounce 3s ease-in-out infinite;
+
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 
@@ -68,25 +82,35 @@ section {
 
 #buttons {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-between;
     font-weight: bold;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .main-button {
     padding: 3rem;
     border: solid black 0.1rem;
     border-radius: 50%;
-    box-shadow:  5px 5px 5px;
+    box-shadow: 5px 5px 5px;
     transition: background-color 0.5s ease;
     text-align: center;
     width: 33%;
 
+    transform-style: preserve-3d;
+    perspective: 1000px;
+
+    animation: floatRotate 6s ease-in-out infinite;
+
+
+
+    transition: all 0.3s ease;
+
+
 }
 
 .main-button:hover {
-    background-color: white  !important;
+    background-color: white !important;
     cursor: pointer;
     transform: scale(1.2);
     transform: translateY(-3);
@@ -107,13 +131,45 @@ section {
     width: 35%;
 }
 
+@keyframes floatRotate {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+    }
+
+    25% {
+        transform: translateY(-10px) rotateX(5deg) rotateY(15deg);
+    }
+
+    50% {
+        transform: translateY(-5px) rotateX(-2deg) rotateY(0deg);
+    }
+
+    75% {
+        transform: translateY(-15px) rotateX(3deg) rotateY(-15deg);
+    }
+}
+
+
 main section {
     width: 35%;
 }
 
-div img {
+main img {
     width: 100%;
     border-radius: 50%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+
+    animation: floatRotate 6s ease-in-out infinite;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(139, 92, 246, 0.4);
+
+    transition: all 0.3s ease;
+
 }
 
 footer {
