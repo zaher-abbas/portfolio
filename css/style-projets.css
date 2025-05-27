@@ -91,6 +91,10 @@ section figure {
     justify-content: center;
 }
 
+.centered-btn button {
+    width: 100%;
+}
+
 
 .tech {
     display: flex;
