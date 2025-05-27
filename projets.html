@@ -1,149 +1,183 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes Projets</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mes Projets</title>
+    <link rel="stylesheet" href="css/style-projets.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/style-projets.css" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-</head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <div class="navbar-brand d-flex gap-2 align-items-center">
+            <div class="bg-success" id="logo-round"></div>
+            <h2>Zaher ABBAS</h2>
+            <span>Développeur Full-Stack</span>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projets.html">Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <hr />
+    </div>
+    <main>
+      <section>
+        <figure>
+          <figcaption>
+            <h3>Calculateur BMI</h3>
+            <div class="tech">
+              <span>JavaScript</span>
+              <span>Html</span>
+              <span>CSS</span>
+            </div>
+          </figcaption>
 
-<body>
-  <header>
-    <nav>
-      <div class="nav-section" id="logo">
-        <div class="bg-success" id="logo-round"></div>
-        <h2>Zaher ABBAS</h3>
-          <div>Développeur Web</div>
+          <img
+            src="images/bmi.png"
+            alt="Calculatrice de l'indice de masse corporelle"
+          />
+          <article>
+            Application démo pour calculer l'indice de masse corporelle, réalisé
+            dans le cadre du projet fil-rouge pour évaluer les acquises au cours
+            de la formation DAM M2i
+          </article>
+          <div class="centered-btn">
+            <button class="btn btn-primary">Voir Plus<a href=""></a></button>
+          </div>
+        </figure>
+      </section>
+      <section>
+        <figure>
+          <figcaption>
+            <h3>Full Control Shader</h3>
+            <div class="tech">
+              <span>C#</span>
+              <span>Unity</span>
+            </div>
+          </figcaption>
+
+          <img src="images/shader.png" alt="Full Control Shader" />
+          <article>
+            Easy "All In One" shader for your professional needs. Have you ever
+            wanted to have properties from different shaders combined in one!
+            Full control shader has what you want.
+          </article>
+          <div class="centered-btn">
+            <button class="btn btn-primary">
+              Voir Plus<a
+                href="https://assetstore.unity.com/packages/vfx/shaders/full-control-shader-14005"
+              ></a>
+            </button>
+          </div>
+        </figure>
+      </section>
+      <section>
+        <figure>
+          <figcaption>
+            <h3>Interactive First Person Kit</h3>
+            <div class="tech">
+              <span>C#</span>
+              <span>Unity</span>
+            </div>
+          </figcaption>
+
+          <img src="images/fps.jpeg" alt="Interactive First Person Kit" />
+          <article>
+            Have you ever wanted to have a fully functional puzzle/horror-style
+            first person controller in Unity for your own project? like many
+            popular indie FPS games (e.g. Amnesia, Slender)! Then this kit is
+            for you
+          </article>
+          <div class="centered-btn">
+            <button class="btn btn-primary">
+              Voir Plus<a
+                href="https://discussions.unity.com/t/interactive-first-person-kit-for-puzzle-horror-games/529140"
+              ></a>
+            </button>
+          </div>
+        </figure>
+      </section>
+      <section>
+        <figure>
+          <figcaption>
+            <h3>Loading Component</h3>
+            <div class="tech">
+              <span>C#</span>
+              <span>Unity</span>
+            </div>
+          </figcaption>
+          <img src="images/load.png" alt="Loading Component" />
+          <article>
+            Loading Component is a one-click solution to make loading screens
+            for your game when switching between scenes; a loading bar
+            indicating the progress percentage of loaded content.
+          </article>
+          <div class="centered-btn">
+            <button class="btn btn-primary">
+              Voir Plus<a
+                href="https://assetstore.unity.com/packages/tools/loading-component-7885"
+              ></a>
+            </button>
+          </div>
+        </figure>
+      </section>
+    </main>
+    <div class="container">
+      <hr />
+    </div>
+
+    <footer>
+      <div class="footer-item">
+        <h4>Téléphone</h4>
+        <p>07 58 92 50 32</p>
       </div>
-      <div class="nav-section">
-        <a href="">CV</a>
-        <a href="projets.html">Projets</a>
-        <a href="contact.html">Contact</a>
+      <div class="footer-item">
+        <h4>Email</h4>
+        <a href="mailto:z.abbas83@yahoo.com">z.abbas83@yahoo.com</a>
       </div>
-    </nav>
-  </header>
-  <div class="container">
-    <hr>
-  </div>
-  <main>
-    <section>
-      <figure>
-        <figcaption>
-          <h3>Calculateur BMI</h3>
-          <div class="tech">
-            <span>JavaScript</span>
-            <span>Html</span>
-            <span>CSS</span>
-          </div>
-        </figcaption>
-
-
-        <img src="images/bmi.png" alt="Calculatrice de l'indice de masse corporelle">
-        <article>Application démo pour calculer l'indice de masse corporelle, réalisé dans le cadre du projet fil-rouge
-          pour évaluer les acquises au cours de la formation DAM M2i</article>
-        <div class="centered-btn">
-
-          <button class="btn btn-primary">Voir Plus<a href=""></a>
-          </button>
-        </div>
-      </figure>
-    </section>
-    <section>
-      <figure>
-        <figcaption>
-          <h3>Full Control Shader</h3>
-          <div class="tech">
-            <span>C#</span>
-            <span>Unity</span>
-          </div>
-        </figcaption>
-
-
-        <img src="images/shader.png" alt="Full Control Shader">
-        <article>Easy "All In One" shader for your professional needs. Have you ever wanted to have properties from
-          different shaders combined in one! Full control shader has what you want.</article>
-        <div class="centered-btn">
-
-          <button class="btn btn-primary">Voir Plus<a
-              href="https://assetstore.unity.com/packages/vfx/shaders/full-control-shader-14005"></a>
-          </button>
-        </div>
-      </figure>
-
-
-    </section>
-    <section>
-      <figure>
-        <figcaption>
-          <h3>Interactive First Person Kit</h3>
-          <div class="tech">
-            <span>C#</span>
-            <span>Unity</span>
-          </div>
-        </figcaption>
-
-        <img src="images/fps.jpeg" alt="Interactive First Person Kit">
-        <article>Have you ever wanted to have a fully functional puzzle/horror-style first person controller in Unity
-          for your own project? like many popular indie FPS games (e.g. Amnesia, Slender)! Then this kit is for you
-        </article>
-        <div class="centered-btn">
-
-          <button class="btn btn-primary">Voir Plus<a
-              href="https://discussions.unity.com/t/interactive-first-person-kit-for-puzzle-horror-games/529140"></a>
-          </button>
-        </div>
-      </figure>
-    </section>
-    <section>
-      <figure>
-        <figcaption>
-          <h3>Loading Component</h3>
-          <div class="tech">
-            <span>C#</span>
-            <span>Unity</span>
-          </div>
-        </figcaption>
-        <img src="images/load.png" alt="Loading Component">
-        <article>Loading Component is a one-click solution to make loading screens for your game when switching
-          between scenes; a loading bar indicating the progress percentage of loaded content.</article>
-        <div class="centered-btn">
-          <button class="btn btn-primary">Voir Plus<a
-              href="https://assetstore.unity.com/packages/tools/loading-component-7885"></a>
-          </button>
-        </div>
-      </figure>
-    </section>
-  </main>
-  <div class="container">
-    <hr>
-  </div>
-
-  <footer>
-    <div class="footer-item">
-
-      <h4>Téléphone</h4>
-      <p>07 58 92 50 32</p>
-    </div>
-    <div class="footer-item">
-
-      <h4>Email</h4>
-      <a href="mailto:z.abbas83@yahoo.com">z.abbas83@yahoo.com</a>
-    </div>
-    <div class="footer-item">
-
-      <h4>Suivez-moi</h4>
-      <a href=""><img src="images/instagram.png" alt="lien vers mon compte Instagram"></a>
-      <a href="https://www.youtube.com/@creationartstudio12"><img src="images/youtube.png"
-          alt="lien vers ma chaine YouTube"></a>
-
-    </div>
-    <div>
-      <p>© 2035 par Zaher ABBAS</p>
-    </div>
-  </footer>
-</body>
-
+      <div class="footer-item">
+        <h4>Suivez-moi</h4>
+        <a href=""
+          ><img src="images/instagram.png" alt="lien vers mon compte Instagram"
+        /></a>
+        <a href="https://www.youtube.com/@creationartstudio12"
+          ><img src="images/youtube.png" alt="lien vers ma chaine YouTube"
+        /></a>
+      </div>
+      <div>
+        <p>© 2035 par Zaher ABBAS</p>
+      </div>
+    </footer>
+  </body>
 </html>
