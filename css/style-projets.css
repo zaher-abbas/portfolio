@@ -8,38 +8,42 @@ body {
 }
 
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-
-.nav-section {
-    display: flex;
-    align-items: center;
-}
 
 #logo {
     gap: 1rem;
     font-size: 0.9rem;
 }
 
-nav a {
+nav li {
     border-right: solid black 0.1rem;
     padding: 1rem;
-    text-decoration: none;
-    color: black;
 }
 
+
+span {
+    font-size: large;
+}
 
 
 #logo-round {
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
+    animation: bounce 3s ease-in-out infinite;
+
 }
 
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
 
 
 main {
