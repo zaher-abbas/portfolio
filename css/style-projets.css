@@ -50,6 +50,65 @@ main {
     gap: 2rem;
 }
 
+section img {
+    width: 100%;
+}
+
+section a {
+    text-decoration: none;
+    color: black;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+section {
+    border: 2px solid transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+
+}
+
+section figure {
+    padding: 1rem;
+}
+
+
+.tech {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.tech span {
+    background: #e9ecef;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #495057;
+}
+
+section h3 {
+    transition: all 0.5s ease;
+}
+
+section:hover {
+    border-color: #007bff;
+    transform: translateY(-5px);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+
+    h3 {
+        text-decoration: underline;
+    }
+
+}
+
 
 
 footer {
