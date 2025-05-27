@@ -152,7 +152,7 @@ section {
 
 
 main section {
-    width: 35%;
+    width: 50%;
 }
 
 main img {
@@ -188,6 +188,10 @@ footer {
 @media screen and (max-width: 768px) {
     main {
         flex-direction: column;
+    }
+
+    main section {
+    width: 75%;
     }
 
     #buttons {
