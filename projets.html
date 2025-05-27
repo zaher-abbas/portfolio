@@ -46,11 +46,31 @@
           pour évaluer les acquises au cours de la formation DAM M2i</article>
         <div class="centered-btn">
 
-          <button class="btn btn-primary">Voir Plus<a href=""></a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Démo
           </button>
         </div>
       </figure>
     </section>
+
+ <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
     <section>
       <figure>
         <figcaption>
@@ -145,5 +165,5 @@
     </div>
   </footer>
 </body>
-
+<script src="js/bootstrap.min.js"></script>
 </html>
