@@ -102,14 +102,13 @@ section {
 
     animation: floatRotate 6s ease-in-out infinite;
 
-
-
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 
 
 }
 
 .main-button:hover {
+    animation: none;
     background-color: white !important;
     cursor: pointer;
     transform: scale(1.2);
