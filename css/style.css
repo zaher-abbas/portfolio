@@ -84,12 +84,13 @@ section {
 .main-button:hover {
     background-color: white  !important;
     cursor: pointer;
+    transform: scale(1.2);
+    transform: translateY(-3);
 }
 
 .main-button a {
     text-decoration: none;
     color: black;
-
 
 }
 
@@ -124,4 +125,14 @@ footer {
 .footer-item img {
     width: 2rem;
     height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #buttons {
+        flex-direction: column;
+    }
 }
