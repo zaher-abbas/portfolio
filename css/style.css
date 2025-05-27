@@ -7,19 +7,6 @@ body {
     background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-
-.nav-section {
-    display: flex;
-    align-items: center;
-}
-
 #logo {
     gap: 1rem;
     font-size: 0.9rem;
