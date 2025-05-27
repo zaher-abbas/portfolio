@@ -1,5 +1,5 @@
 html {
-    font-size: large;
+    font-size: larger;
 }
 
 body {
@@ -43,15 +43,29 @@ nav a {
 
 
 main {
-    margin: 4rem 0;
+    margin: 2rem 0;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
     gap: 2rem;
+    flex-wrap: wrap;
+
 }
 
-section img {
+main section {
+    border: 2px solid transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    border-radius: 8px;
+    width: 35%;
+    background-color: white;
+}
+
+
+
+figure img {
     width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
 }
 
 section a {
@@ -59,23 +73,18 @@ section a {
     color: black;
 }
 
-figure {
+section figure {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-}
-
-section {
-    border: 2px solid transparent;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 2rem;
     padding: 2rem;
-    transition: all 0.5s ease;
-    border-radius: 8px;
 
 }
 
-section figure {
-    padding: 1rem;
+.centered-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -87,24 +96,32 @@ section figure {
 }
 
 .tech span {
-    background: #e9ecef;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
     font-size: 0.8rem;
-    color: #495057;
+    font-weight: 500;
 }
 
 section h3 {
-    transition: all 0.5s ease;
+    transition: color 0.3s ease;
 }
 
 section:hover {
     border-color: #007bff;
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
     box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
 
-    h3 {
-        text-decoration: underline;
+    figure h3 {
+        color: #3498db;
+
+    }
+
+    figure img {
+    transform: rotateY(360deg) scale(1.1);
+
+
     }
 
 }
@@ -123,4 +140,17 @@ footer {
 .footer-item img {
     width: 2rem;
     height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    main section {
+        width: 75%;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    main section {
+        width: 30%;
+    }
 }
