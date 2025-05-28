@@ -1,11 +1,8 @@
-html {
-    font-size: large;
-}
-
 body {
     margin: 0;
     background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
     font-family: 'Inter', sans-serif !important;
+    line-height: 2 !important;
 }
 
 #logo {
