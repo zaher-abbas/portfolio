@@ -5,6 +5,8 @@ function calcIMC(taille, poids) {
     return (poids / taille * taille);
 }
 
+let form = document.getElementById("form");
+
 let taille = document.getElementById("taille");
 let poids = document.getElementById("poids");
 
@@ -28,6 +30,7 @@ btnCalcul.addEventListener("click", () => {
     else errorMsgPoids.textContent = "";
 
     if (taille.value > 0 && poids.value > 0) {
+        form.style.display = "none";
         imc = calcIMC(parseFloat(taille.value), parseFloat(poids.value));
 
     }
