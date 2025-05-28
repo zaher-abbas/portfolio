@@ -82,10 +82,11 @@ section {
 }
 
 .main-button:hover {
-    border-style: solid;
+
+    border-style: double;
     border-color: #007bff;
     border-width: 0.3rem;
-    animation: borderMove 2s infinite linear;
+    animation: borderMove 1s infinite linear;
     background-color: white !important;
     cursor: pointer;
     transform: scale(1.2);
