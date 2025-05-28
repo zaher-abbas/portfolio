@@ -17,18 +17,15 @@ nav li {
     padding: 1rem;
 }
 
-
 span {
     font-size: large;
 }
-
 
 #logo-round {
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
     animation: bounce 3s ease-in-out infinite;
-
 }
 
 @keyframes bounce {
@@ -42,7 +39,6 @@ span {
         transform: translateY(-10px);
     }
 }
-
 
 section img {
     border-radius: 50%;
@@ -63,8 +59,6 @@ section {
     gap: 3rem;
 }
 
-
-
 #buttons {
     display: flex;
     justify-content: space-between;
@@ -75,10 +69,9 @@ section {
 
 .main-button {
     padding: 3rem;
-    border: solid black 0.1rem;
+    border-style: none;
     border-radius: 50%;
     box-shadow: 5px 5px 5px;
-    transition: background-color 0.5s ease;
     text-align: center;
     width: 33%;
 
@@ -88,12 +81,13 @@ section {
     animation: floatRotate 6s ease-in-out infinite;
 
     transition: all 0.5s ease;
-
-
 }
 
 .main-button:hover {
-    animation: none;
+    border-style: solid;
+    border-color: #007bff;
+    border-width: 0.3rem;
+    animation: borderMove 2s infinite linear;
     background-color: white !important;
     cursor: pointer;
     transform: scale(1.2);
@@ -108,8 +102,6 @@ section {
 #line {
     text-align: center;
 }
-
-
 
 #moi {
     width: 35%;
@@ -135,6 +127,27 @@ section {
     }
 }
 
+@keyframes borderMove {
+    0% {
+        border-color: #007bff;
+    }
+
+    25% {
+        border-color: #28a745;
+    }
+
+    50% {
+        border-color: #ffc107;
+    }
+
+    75% {
+        border-color: #dc3545;
+    }
+
+    100% {
+        border-color: #007bff;
+    }
+}
 
 main section {
     width: 50%;
@@ -148,12 +161,9 @@ main img {
 
     animation: floatRotate 6s ease-in-out infinite;
 
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.3),
-        0 0 20px rgba(139, 92, 246, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(139, 92, 246, 0.4);
 
     transition: all 0.3s ease;
-
 }
 
 footer {
@@ -163,7 +173,6 @@ footer {
     align-items: center;
     text-align: center;
 }
-
 
 .footer-item img {
     width: 2rem;
@@ -184,7 +193,13 @@ footer {
     }
 
     nav li {
-    border-right: none;
-    border-bottom: solid black 0.15rem;
+        border-right: none;
+        border-bottom: solid black 0.15rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #moi {
+        width: 25%;
     }
 }
