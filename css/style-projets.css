@@ -109,8 +109,10 @@ section h3 {
 }
 
 section:hover {
-    border-color: #007bff;
     transform: translateY(-5px) scale(1.1);
+    border-color: #007bff;
+    border-width: 0.3rem;
+    animation: borderMove 2s infinite linear;
     box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
 
     figure h3 {
@@ -168,6 +170,28 @@ footer {
     background-color: #dc3912;
 }
 
+
+@keyframes borderMove {
+    0% {
+        border-color: #007bff;
+    }
+
+    25% {
+        border-color: #28a745;
+    }
+
+    50% {
+        border-color: #ffc107;
+    }
+
+    75% {
+        border-color: #dc3545;
+    }
+
+    100% {
+        border-color: #007bff;
+    }
+}
 
 
 @media screen and (max-width: 768px) {
