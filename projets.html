@@ -96,11 +96,11 @@
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                Calcul IMC (Indice de Masse Corporelle)
+                Calculer Votre IMC (Indice de Masse Corporelle)
               </h1>
               <button
                 type="button"
@@ -120,7 +120,7 @@
               <form id="form">
                 <div class="mb-3">
                   <label for="taille" class="form-label"
-                    ><strong>Votre Taille (cm)</strong></label
+                    ><strong>Votre Taille (cm):</strong></label
                   >
                   <input
                     type="number"
@@ -136,7 +136,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="poids" class="form-label"
-                    ><strong>Votre poids (Kg)</strong></label
+                    ><strong>Votre poids (Kg):</strong></label
                   >
                   <input
                     type="number"
@@ -164,7 +164,10 @@
                 </div>
               </form>
             </div>
-            <div class="modal-footer justify-content-center">
+            <div class="modal-footer justify-content-center gap-2">
+              <button id="recharger" type="button" class="btn btn-info">
+                Redémarrer
+              </button>
               <button
                 type="button"
                 class="btn btn-danger"

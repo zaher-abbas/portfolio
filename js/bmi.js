@@ -2,6 +2,13 @@ let btnLancer = document.getElementById("btnLancer");
 let form = document.getElementById("form");
 let divResultat = document.createElement("div");
 let modalBody = document.querySelector(".modal-body");
+let recharger = document.getElementById("recharger");
+
+recharger.addEventListener("click", () => {
+    form.style.display = "block";
+    divResultat.innerHTML = "";
+    divResultat.removeAttribute("class");
+})
 
 btnLancer.addEventListener("click", () => {
     divResultat.removeAttribute("class");
@@ -20,6 +27,10 @@ function afficherResultat(imc) {
     form.style.display = "none";
     modalBody.appendChild(divResultat);
     divResultat.classList.add("text-center");
+    divResultat.classList.add("my-3");
+    divResultat.classList.add("fw-bold");
+
+
     if (imc <= 16) {
         divResultat.innerHTML = "<span>Anorexie ou dénutrition</span>"
         divResultat.classList.add("anorexie");
