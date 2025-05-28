@@ -47,7 +47,7 @@ main {
 }
 
 main section {
-    border: 4px solid transparent;
+    border: 4px double transparent;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.5s ease;
     border-radius: 15px;
@@ -110,7 +110,7 @@ section:hover {
     transform: translateY(-5px) scale(1.1);
     border-color: #007bff;
     border-width: 0.3rem;
-    animation: borderMove 2s infinite linear;
+    animation: borderMove 1s infinite linear;
     box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
 
     figure h3 {
