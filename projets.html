@@ -119,10 +119,12 @@
                     class="form-control"
                     id="taille"
                     aria-describedby="tailleHelp"
+                    required
                   />
                   <div id="tailleHelp" class="form-text">
                     Votre taille doit etre en centimètres
                   </div>
+                  <div id="errorMsgTaille" class="bg-warning form-text"></div>
                 </div>
                 <div class="mb-3">
                   <label for="poids" class="form-label"
@@ -133,16 +135,22 @@
                     class="form-control"
                     id="poids"
                     aria-describedby="poidsHelp"
+                    required
                   />
                   <div id="poidsHelp" class="form-text">
                     Votre poids doit etre en kilogrammes
                   </div>
+                  <div id="errorMsgPoids" class="bg-warning form-text"></div>
                 </div>
 
                 <div
                   class="d-flex justify-content-center align-items-center mt-4"
                 >
-                  <button type="submit" class="btn btn-success w-100">
+                  <button
+                    id="btnCalc"
+                    type="button"
+                    class="btn btn-success w-100"
+                  >
                     Calculer
                   </button>
                 </div>
