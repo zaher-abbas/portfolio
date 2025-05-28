@@ -62,7 +62,6 @@
               <span>CSS</span>
             </div>
           </figcaption>
-
           <img
             src="images/bmi.png"
             alt="Calculatrice de l'indice de masse corporelle"
@@ -119,6 +118,14 @@
               </div>
               <form id="form">
                 <div class="mb-3">
+                  <label for="age" class="form-label"
+                    ><strong>Votre Age:</strong></label
+                  >
+                  <input type="number" class="form-control" id="age" required />
+                  <div id="errorMsgAge" class="form-text"></div>
+                </div>
+
+                <div class="mb-3">
                   <label for="taille" class="form-label"
                     ><strong>Votre Taille (cm):</strong></label
                   >
@@ -132,7 +139,7 @@
                   <div id="tailleHelp" class="form-text">
                     Votre taille doit etre en centimètres
                   </div>
-                  <div id="errorMsgTaille" class="bg-warning form-text"></div>
+                  <div id="errorMsgTaille" class="form-text"></div>
                 </div>
                 <div class="mb-3">
                   <label for="poids" class="form-label"
@@ -148,7 +155,7 @@
                   <div id="poidsHelp" class="form-text">
                     Votre poids doit etre en kilogrammes
                   </div>
-                  <div id="errorMsgPoids" class="bg-warning form-text"></div>
+                  <div id="errorMsgPoids" class="form-text"></div>
                 </div>
 
                 <div
