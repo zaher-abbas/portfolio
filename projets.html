@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes Projets</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style-projets.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <div class="navbar-brand d-flex gap-2 align-items-center">
+            <div class="bg-success" id="logo-round"></div>
+            <h2>Zaher ABBAS</h2>
+            <span>Développeur Full-Stack</span>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav align-items-end">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="https://cvdesignr.com/p/60f7661fe17ff"
+                  >CV</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projets.html">Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <hr />
+    </div>
+    <main>
+      <section>
+        <figure>
+          <figcaption>
+            <h3>Calculateur IMC</h3>
+            <div class="tech">
+              <span>JavaScript</span>
+              <span>Html</span>
+              <span>CSS</span>
+            </div>
+          </figcaption>
+          <img
+            src="images/bmi.png"
+            alt="Calculatrice de l'indice de masse corporelle"
+          />
+          <article>
+            Application démo pour calculer l'indice de masse corporelle, réalisé
+            dans le cadre du projet fil-rouge pour évaluer les acquises au cours
+            de la formation DAM M2i
+          </article>
+          <div class="centered-btn">
+            <button
+              id="btnLancer"
+              type="button"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Lancer
+            </button>
+          </div>
+        </figure>
+      </section>
+
+      <!-- MODAL-->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Calculer Votre IMC (Indice de Masse Corporelle)
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body my-3">
+              <div class="text-center">
+                <img
+                  class="mb-4"
+                  src="images/bmi-logo.jpg"
+                  alt="Logo calculatrice de IMC"
+                />
+              </div>
+              <form id="form">
+                <div class="mb-3">
+                  <label for="age" class="form-label"
+                    ><strong>Votre Age:</strong></label
+                  >
+                  <input type="number" class="form-control" id="age" required />
+                  <div id="errorMsgAge" class="form-text"></div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="taille" class="form-label"
+                    ><strong>Votre Taille (cm):</strong></label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="taille"
+                    aria-describedby="tailleHelp"
+                    required
+                  />
+                  <div id="tailleHelp" class="form-text">
+                    Votre taille doit etre en centimètres
+                  </div>
+                  <div id="errorMsgTaille" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="poids" class="form-label"
+                    ><strong>Votre poids (Kg):</strong></label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="poids"
+                    aria-describedby="poidsHelp"
+                    required
+                  />
+                  <div id="poidsHelp" class="form-text">
+                    Votre poids doit etre en kilogrammes
+                  </div>
+                  <div id="errorMsgPoids" class="form-text"></div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center mt-4"
+                >
+                  <button
+                    id="btnCalc"
+                    type="button"
+                    class="btn btn-success w-100"
+                  >
+                    Calculer
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer justify-content-center gap-2">
+              <button id="recharger" type="button" class="btn btn-info">
+                Redémarrer
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Fermer
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section>
+        <figure>
+          <figcaption>
+            <h3>Full Control Shader</h3>
+            <div class="tech">
+              <span>C#</span>
+              <span>Unity</span>
+            </div>
+          </figcaption>
+
+          <img src="images/shader.png" alt="Full Control Shader" />
+          <article>
+            Easy "All In One" shader for your professional needs. Have you ever
+            wanted to have properties from different shaders combined in one!
+            Full control shader has what you want.
+          </article>
+          <div class="centered-btn">
+            <button class="btn btn-primary">
+              <a
+                target="_blank"
+                href="https://assetstore.unity.com/packages/vfx/shaders/full-control-shader-14005"
+                >Voir Plus</a
+              >
+            </button>
+          </div>
+        </figure>
+      </section>
+      <section>
+        <figure>
+          <figcaption>
+            <h3>Interactive First Person Kit</h3>
+            <div class="tech">
+              <span>C#</span>
+              <span>Unity</span>
+            </div>
+          </figcaption>
+
+          <img src="images/fps.jpeg" alt="Interactive First Person Kit" />
+          <article>
+            Have you ever wanted to have a fully functional puzzle/horror-style
+            first person controller in Unity for your own project? like many
+            popular indie FPS games (e.g. Amnesia, Slender)! Then this kit is
+            for you
+          </article>
+          <div class="centered-btn">
+            <button class="btn btn-primary">
+              <a
+                target="_blank"
+                href="https://discussions.unity.com/t/interactive-first-person-kit-for-puzzle-horror-games/529140"
+                >Voir Plus</a
+              >
+            </button>
+          </div>
+        </figure>
+      </section>
+      <section>
+        <figure>
+          <figcaption>
+            <h3>Loading Component</h3>
+            <div class="tech">
+              <span>C#</span>
+              <span>Unity</span>
+            </div>
+          </figcaption>
+          <img src="images/load.png" alt="Loading Component" />
+          <article>
+            Loading Component is a one-click solution to make loading screens
+            for your game when switching between scenes; a loading bar
+            indicating the progress percentage of loaded content.
+          </article>
+          <div class="centered-btn">
+            <button class="btn btn-primary">
+              <a
+                target="_blank"
+                href="https://assetstore.unity.com/packages/tools/loading-component-7885"
+                >Voir Plus</a
+              >
+            </button>
+          </div>
+        </figure>
+      </section>
+    </main>
+    <div class="container">
+      <hr />
+    </div>
+
+    <footer>
+      <div class="footer-item">
+        <h4><i class="bi bi-telephone"></i></h4>
+        07 58 92 50 32
+      </div>
+      <div class="footer-item">
+        <h4><i class="bi bi-envelope"></i></h4>
+        <a href="mailto:z.abbas83@yahoo.com">z.abbas83@yahoo.com</a>
+      </div>
+      <div class="footer-item">
+        <a href="https://www.youtube.com/@creationartstudio12"
+          ><img src="images/youtube.png" alt="lien vers ma chaine YouTube"
+        /></a>
+      </div>
+      <div>
+        <p>© 2025 par Zaher ABBAS</p>
+      </div>
+    </footer>
+  </body>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bmi.js"></script>
+</html>
