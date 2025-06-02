@@ -60,9 +60,9 @@ section {
 #buttons {
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
     align-items: center;
     gap: 1.5rem;
+    font-weight: normal;
 }
 
 .main-button {
@@ -81,8 +81,14 @@ section {
     transition: all 0.5s ease;
 }
 
-.main-button:hover {
+.main-button a {
+    text-decoration: none;
+    color: black;
+}
 
+
+
+.main-button:hover {
     border-style: double;
     border-color: #007bff;
     border-width: 0.3rem;
@@ -91,12 +97,16 @@ section {
     cursor: pointer;
     transform: scale(1.2);
     transform: translateY(-3);
+    font-weight: bolder;
+    color: #3498db;
+
+    a {
+        color: #3498db;
+    }
+
 }
 
-.main-button a {
-    text-decoration: none;
-    color: black;
-}
+
 
 #line {
     text-align: center;
@@ -166,7 +176,7 @@ main img {
 }
 
 footer {
-    padding: 1.5rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
