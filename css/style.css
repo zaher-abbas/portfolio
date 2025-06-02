@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    font-family: 'Inter', sans-serif !important;
+    line-height: 2 !important;
+}
+
+#logo {
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+nav li {
+    border-right: solid black 0.15rem;
+    padding: 1rem;
+}
+
+span {
+    font-size: large;
+}
+
+#logo-round {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+section img {
+    border-radius: 50%;
+}
+
+main {
+    margin: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main-button {
+    padding: 3rem;
+    border-style: none;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px;
+    text-align: center;
+    width: 33%;
+
+    transform-style: preserve-3d;
+    perspective: 1000px;
+
+    animation: floatRotate 6s ease-in-out infinite;
+
+    transition: all 0.5s ease;
+}
+
+.main-button:hover {
+
+    border-style: double;
+    border-color: #007bff;
+    border-width: 0.3rem;
+    animation: borderMove 1s infinite linear;
+    background-color: white !important;
+    cursor: pointer;
+    transform: scale(1.2);
+    transform: translateY(-3);
+}
+
+.main-button a {
+    text-decoration: none;
+    color: black;
+}
+
+#line {
+    text-align: center;
+}
+
+#moi {
+    width: 35%;
+}
+
+@keyframes floatRotate {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+    }
+
+    25% {
+        transform: translateY(-10px) rotateX(5deg) rotateY(15deg);
+    }
+
+    50% {
+        transform: translateY(-5px) rotateX(-2deg) rotateY(0deg);
+    }
+
+    75% {
+        transform: translateY(-15px) rotateX(3deg) rotateY(-15deg);
+    }
+}
+
+@keyframes borderMove {
+    0% {
+        border-color: #007bff;
+    }
+
+    25% {
+        border-color: #28a745;
+    }
+
+    50% {
+        border-color: #ffc107;
+    }
+
+    75% {
+        border-color: #dc3545;
+    }
+
+    100% {
+        border-color: #007bff;
+    }
+}
+
+main section {
+    width: 50%;
+}
+
+main img {
+    width: 100%;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+
+    animation: floatRotate 6s ease-in-out infinite;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(139, 92, 246, 0.4);
+
+    transition: all 0.3s ease;
+}
+
+footer {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-item img {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    main section {
+        width: 75%;
+    }
+
+    #buttons {
+        flex-direction: column;
+    }
+
+    nav li {
+        border-right: none;
+        border-bottom: solid black 0.15rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #moi {
+        width: 25%;
+    }
+}
