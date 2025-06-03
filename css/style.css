@@ -49,7 +49,7 @@ main {
     grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
     align-items: center;
     gap: 3rem;
-    margin: 1.5rem auto;
+    margin: 3rem auto;
 }
 
 
@@ -83,17 +83,15 @@ section {
 
 .main-button {
     font-weight: normal;
+    font-size: large;
     padding: 3rem;
     border-style: none;
     border-radius: 50%;
     box-shadow: 5px 5px 5px;
     text-align: center;
-
     transform-style: preserve-3d;
     perspective: 1000px;
-
     animation: floatRotate 6s ease-in-out infinite;
-
     transition: all 0.5s ease;
 }
 
