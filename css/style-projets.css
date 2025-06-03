@@ -123,11 +123,11 @@ section:hover {
 }
 
 footer {
-    padding: 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
+    margin: 2rem 0;
 }
 
 .footer-item img {
