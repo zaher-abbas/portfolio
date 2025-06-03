@@ -38,7 +38,7 @@ function calcIMC(taille, poids) {
 
 function afficherResultat(imc) {
     form.style.display = "none";
-    divImc.innerHTML = "<h4 class='text-center'>Votre <span class='text-primary'>IMC</span> est: " + imc.toFixed(1) + " </h4>";
+    divImc.innerHTML = "<h5 class='text-center'>Votre <span class='text-primary fw-bold'>IMC</span> est: " + imc.toFixed(1) + " </h5>";
     divInfo.innerHTML = "<h6 class='fst-italic text-info mt-3 text-start'>L’interprétation est faite selon la classification de l’OMS (Organisation Mondiale de la Santé)</h6>";
     modalBody.appendChild(divImc);
     modalBody.appendChild(divResultat);
@@ -49,19 +49,19 @@ function afficherResultat(imc) {
 
 
     if (imc <= 16) {
-        divResultat.innerHTML = "<h3>Anorexie ou dénutrition</h3>"
+        divResultat.innerHTML = "<h2>Anorexie ou dénutrition</h2>"
         divResultat.classList.add("anorexie");
         return
     }
     else if (imc >= 16.5 && imc < 18.5) {
-        divResultat.innerHTML = "<h3>Maigreur</h3>"
+        divResultat.innerHTML = "<h2>Maigreur</h2>"
         divResultat.classList.add("maigreur");
 
         return
 
     }
     else if (imc >= 18.5 && imc <= 25) {
-        divResultat.innerHTML = "<h3>Corpulence normale</h3>"
+        divResultat.innerHTML = "<h2>Corpulence normale</h2>"
         divResultat.classList.add("normal");
 
         return
@@ -69,7 +69,7 @@ function afficherResultat(imc) {
     }
 
     else if (imc > 25 && imc <= 30) {
-        divResultat.innerHTML = "<h3>Surpoids</h3>"
+        divResultat.innerHTML = "<h2>Surpoids</h2>"
         divResultat.classList.add("surpoids");
 
         return
@@ -77,7 +77,7 @@ function afficherResultat(imc) {
     }
 
     else if (imc > 30 && imc <= 35) {
-        divResultat.innerHTML = "<h3>Obésité modérée (Classe 1)</h3>"
+        divResultat.innerHTML = "<h2>Obésité modérée (Classe 1)</h2>"
         divResultat.classList.add("classi");
 
         return
@@ -85,7 +85,7 @@ function afficherResultat(imc) {
     }
 
     else if (imc > 35 && imc < 40) {
-        divResultat.innerHTML = "<h3>Obésité élevé (Classe 2)</h3>"
+        divResultat.innerHTML = "<h2>Obésité élevé (Classe 2)</h2>"
         divResultat.classList.add("classii");
 
         return
@@ -93,7 +93,7 @@ function afficherResultat(imc) {
     }
 
     else if (imc > 40) {
-        divResultat.innerHTML = "<h3>Obésite morbide ou massive</h3>"
+        divResultat.innerHTML = "<h2>Obésite morbide ou massive</h2>"
         divResultat.classList.add("classiii");
 
         return
