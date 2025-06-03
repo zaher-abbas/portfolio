@@ -5,11 +5,6 @@ body {
     line-height: 2 !important;
 }
 
-#logo {
-    gap: 1rem;
-    font-size: 0.9rem;
-}
-
 nav li {
     border-right: solid black 0.15rem;
     padding: 1rem;
@@ -19,10 +14,14 @@ span {
     font-size: large;
 }
 
+.navbar-brand {
+    margin-left: 1rem;
+}
+
 #logo-round {
     border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     animation: bounce 3s ease-in-out infinite;
 }
 
@@ -171,8 +170,6 @@ section {
         border-color: #007bff;
     }
 }
-
-
 
 
 footer {
