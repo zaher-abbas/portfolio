@@ -41,8 +41,8 @@ span {
 main {
     margin: 4rem 1rem;
     display: flex;
-    justify-content: space-around;
-    gap: 2rem;
+    justify-content: center;
+    gap: 4rem;
     flex-wrap: wrap;
 }
 
@@ -51,7 +51,7 @@ main section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.5s ease;
     border-radius: 15px;
-    width: 35%;
+    width: 40%;
     background-color: #e0f2fe;
 }
 
@@ -75,6 +75,8 @@ section figure {
     gap: 2rem;
     padding: 2rem;
 }
+
+
 
 .centered-btn {
     display: flex;
@@ -193,6 +195,10 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+    main {
+        gap: 3rem;
+    }
+
     main section {
         width: 85%;
     }
@@ -204,13 +210,8 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    main section {
-        width: 45%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    main section {
-        width: 30%;
+    main {
+        justify-content: space-around;
+        gap: 2rem;
     }
 }

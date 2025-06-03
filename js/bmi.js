@@ -1,13 +1,26 @@
 let btnLancer = document.getElementById("btnLancer");
 let form = document.getElementById("form");
 let divResultat = document.createElement("div");
+let divInfo = document.createElement("div");
+let divImc = document.createElement("div");
 let modalBody = document.querySelector(".modal-body");
 let recharger = document.getElementById("recharger");
+let age = document.getElementById("age");
+let taille = document.getElementById("taille");
+let poids = document.getElementById("poids");
 
 recharger.addEventListener("click", () => {
     form.style.display = "block";
     divResultat.innerHTML = "";
+    divInfo.innerHTML = "";
+    divImc.innerHTML = "";
     divResultat.removeAttribute("class");
+    divInfo.removeAttribute("class");
+    divImc.removeAttribute("class");
+    age.value = 0;
+    taille.value = 0;
+    poids.value = 0;
+
 })
 
 btnLancer.addEventListener("click", () => {
@@ -25,26 +38,30 @@ function calcIMC(taille, poids) {
 
 function afficherResultat(imc) {
     form.style.display = "none";
+    divImc.innerHTML = "<h5 class='text-center'>Votre <span class='text-primary fw-bold'>IMC</span> est: " + imc.toFixed(1) + " </h5>";
+    divInfo.innerHTML = "<h6 class='fst-italic text-info mt-3 text-start'>L’interprétation est faite selon la classification de l’OMS (Organisation Mondiale de la Santé)</h6>";
+    modalBody.appendChild(divImc);
     modalBody.appendChild(divResultat);
+    modalBody.appendChild(divInfo);
     divResultat.classList.add("text-center");
     divResultat.classList.add("my-3");
     divResultat.classList.add("fw-bold");
 
 
     if (imc <= 16) {
-        divResultat.innerHTML = "<h3>Anorexie ou dénutrition</h3><h6 class='fst-italic bg-info mt-2 text-start'>L’interprétation est faite selon la classification de l’OMS (Organisation Mondiale de la Santé)</h6>"
+        divResultat.innerHTML = "<h2>Anorexie ou dénutrition</h2>"
         divResultat.classList.add("anorexie");
         return
     }
     else if (imc >= 16.5 && imc < 18.5) {
-        divResultat.innerHTML = "<h3>Maigreur</h3><h6 class='fst-italic bg-info mt-2 text-start'>L’interprétation est faite selon la classification de l’OMS (Organisation Mondiale de la Santé)</h6>"
+        divResultat.innerHTML = "<h2>Maigreur</h2>"
         divResultat.classList.add("maigreur");
 
         return
 
     }
     else if (imc >= 18.5 && imc <= 25) {
-        divResultat.innerHTML = "<h3>Corpulence normale</h3><h6 class='fst-italic bg-info mt-2 text-start'>L’interprétation est faite selon la classification de l’OMS (Organisation Mondiale de la Santé)</h6>"
+        divResultat.innerHTML = "<h2>Corpulence normale</h2>"
         divResultat.classList.add("normal");
 
         return
@@ -52,7 +69,7 @@ function afficherResultat(imc) {
     }
 
     else if (imc > 25 && imc <= 30) {
-        divResultat.innerHTML = "<h3>Surpoids</h3><h6 class='fst-italic bg-info mt-2 text-start'>L’interprétation est faite selon la classification de l’OMS (Organisation Mondiale de la Santé)</h6>"
+        divResultat.innerHTML = "<h2>Surpoids</h2>"
         divResultat.classList.add("surpoids");
 
         return
@@ -60,7 +77,7 @@ function afficherResultat(imc) {
     }
 
     else if (imc > 30 && imc <= 35) {
-        divResultat.innerHTML = "<h3>Obésité modérée (Classe 1)</h3><h6 class='fst-italic bg-info mt-2 text-start'>L’interprétation est faite selon la classification de l’OMS (Organisation Mondiale de la Santé)</h6>"
+        divResultat.innerHTML = "<h2>Obésité modérée (Classe 1)</h2>"
         divResultat.classList.add("classi");
 
         return
@@ -68,7 +85,7 @@ function afficherResultat(imc) {
     }
 
     else if (imc > 35 && imc < 40) {
-        divResultat.innerHTML = "<h3>Obésité élevé (Classe 2)</h3><h6 class='fst-italic bg-info mt-2 text-start'>L’interprétation est faite selon la classification de l’OMS (Organisation Mondiale de la Santé)</h6>"
+        divResultat.innerHTML = "<h2>Obésité élevé (Classe 2)</h2>"
         divResultat.classList.add("classii");
 
         return
@@ -76,18 +93,13 @@ function afficherResultat(imc) {
     }
 
     else if (imc > 40) {
-        divResultat.innerHTML = "<h3>Obésite morbide ou massive</h3><h6 class='fst-italic bg-info mt-2 text-start'>L’interprétation est faite selon la classification de l’OMS (Organisation Mondiale de la Santé)</h6>"
+        divResultat.innerHTML = "<h2>Obésite morbide ou massive</h2>"
         divResultat.classList.add("classiii");
 
         return
 
     }
 }
-
-
-let age = document.getElementById("age");
-let taille = document.getElementById("taille");
-let poids = document.getElementById("poids");
 
 
 let btnCalcul = document.getElementById("btnCalc");
@@ -129,8 +141,10 @@ btnCalcul.addEventListener("click", () => {
         errorMsgPoids.removeAttribute("class");
     }
 
-    if ((age.value < 18 || age.value > 65) && age.value != 0 && age.value > 0) {
-        alert("Le calcul se fait uniquement pour les adultes dont l'age est entre 18 et 65ans!")
+    if ((age.value < 18 || age.value > 65) && age.value > 0) {
+        errorMsgAge.textContent = "Le calcul se fait uniquement pour les adultes dont l'age est entre 18 et 65ans!";
+        errorMsgAge.classList.add("alert");
+        errorMsgAge.classList.add("alert-warning");
     }
 
     if (taille.value > 0 && poids.value > 0 && (age.value >= 18 && age.value <= 65)) {
