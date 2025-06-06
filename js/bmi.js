@@ -15,8 +15,6 @@ recharger.addEventListener("click", () => {
     divInfo.innerHTML = "";
     divImc.innerHTML = "";
     divResultat.removeAttribute("class");
-    divInfo.removeAttribute("class");
-    divImc.removeAttribute("class");
     age.value = 0;
     taille.value = 0;
     poids.value = 0;
@@ -38,7 +36,7 @@ function calcIMC(taille, poids) {
 
 function afficherResultat(imc) {
     form.style.display = "none";
-    divImc.innerHTML = "<h5 class='text-center'>Votre <span class='text-primary fw-bold'>IMC</span> est: " + imc.toFixed(1) + " </h5>";
+    divImc.innerHTML = "<h5 class='text-center'>Votre <span class='text-primary fw-bold'>IMC</span> est: " + "<strong>" + imc.toFixed(1) + "</strong>" + " </h5>";
     divInfo.innerHTML = "<h6 class='fst-italic text-info mt-3 text-start'>L’interprétation est faite selon la classification de l’OMS (Organisation Mondiale de la Santé)</h6>";
     modalBody.appendChild(divImc);
     modalBody.appendChild(divResultat);
@@ -46,6 +44,7 @@ function afficherResultat(imc) {
     divResultat.classList.add("text-center");
     divResultat.classList.add("my-3");
     divResultat.classList.add("fw-bold");
+    divResultat.classList.add("p-2")
 
 
     if (imc <= 16) {
