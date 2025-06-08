@@ -76,8 +76,9 @@ section {
 
 #buttons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 3rem;
 }
 
 .main-button {
@@ -112,7 +113,7 @@ section {
     transform: scale(1.2);
     transform: translateY(-3);
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #3498db;
 
     a {
@@ -227,6 +228,15 @@ footer {
     #first-section {
         grid-template-columns: 0.1fr 1fr 2fr 0.1fr;
         gap: 2rem;
+    }
+
+    #buttons {
+        justify-content: space-around;
+    }
+
+    .main-button {
+
+        padding: 1.5rem;
     }
 
 }
