@@ -181,10 +181,14 @@ footer {
     margin: 2rem 0;
 }
 
-.footer-item img {
-    width: 2rem;
-    height: 2rem;
+.footer-item p {
+    font-size: 1.5rem;
 }
+
+.footer-item a {
+    font-size: 1.5rem;
+}
+
 
 @media screen and (max-width: 768px) {
     #first-section {
