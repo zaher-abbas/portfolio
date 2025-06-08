@@ -151,6 +151,14 @@ footer {
     height: 25vh;
 }
 
+.modal-header {
+    margin: 0;
+}
+
+.modal-footer {
+    margin: 0;
+}
+
 .anorexie {
     background-color: #41b7d8;
 }
