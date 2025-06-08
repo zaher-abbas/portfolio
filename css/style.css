@@ -81,8 +81,9 @@ section {
 }
 
 .main-button {
+    width: 18%;
     font-weight: normal;
-    font-size: large;
+    font-size: 1.5rem;
     padding: 3rem;
     border-style: none;
     border-radius: 50%;
@@ -111,7 +112,7 @@ section {
     transform: scale(1.2);
     transform: translateY(-3);
     font-weight: bolder;
-    font-size: larger;
+    font-size: 2rem;
     color: #3498db;
 
     a {
