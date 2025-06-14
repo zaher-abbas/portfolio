@@ -8,6 +8,8 @@ let recharger = document.getElementById("recharger");
 let age = document.getElementById("age");
 let taille = document.getElementById("taille");
 let poids = document.getElementById("poids");
+let imc = 0;
+
 
 recharger.addEventListener("click", () => {
     form.style.display = "block";
@@ -51,51 +53,35 @@ function afficherResultat(imc) {
         divResultat.innerHTML = "<h2>Anorexie ou dénutrition</h2>"
         divResultat.classList.add("anorexie");
         return
-    }
-    else if (imc >= 16.5 && imc < 18.5) {
+    } else if (imc >= 16.5 && imc < 18.5) {
         divResultat.innerHTML = "<h2>Maigreur</h2>"
         divResultat.classList.add("maigreur");
 
-        return
 
-    }
-    else if (imc >= 18.5 && imc <= 25) {
+    } else if (imc >= 18.5 && imc <= 25) {
         divResultat.innerHTML = "<h2>Corpulence normale</h2>"
         divResultat.classList.add("normal");
 
-        return
 
-    }
-
-    else if (imc > 25 && imc <= 30) {
+    } else if (imc > 25 && imc <= 30) {
         divResultat.innerHTML = "<h2>Surpoids</h2>"
         divResultat.classList.add("surpoids");
 
-        return
 
-    }
-
-    else if (imc > 30 && imc <= 35) {
+    } else if (imc > 30 && imc <= 35) {
         divResultat.innerHTML = "<h2>Obésité modérée (Classe 1)</h2>"
         divResultat.classList.add("classi");
 
-        return
 
-    }
-
-    else if (imc > 35 && imc < 40) {
+    } else if (imc > 35 && imc < 40) {
         divResultat.innerHTML = "<h2>Obésité élevé (Classe 2)</h2>"
         divResultat.classList.add("classii");
 
-        return
 
-    }
-
-    else if (imc > 40) {
+    } else if (imc > 40) {
         divResultat.innerHTML = "<h2>Obésite morbide ou massive</h2>"
         divResultat.classList.add("classiii");
 
-        return
 
     }
 }
@@ -106,7 +92,6 @@ let errorMsgTaille = document.getElementById("errorMsgTaille");
 let errorMsgPoids = document.getElementById("errorMsgPoids");
 let errorMsgAge = document.getElementById("errorMsgAge");
 
-let imc = 0;
 
 btnCalcul.addEventListener("click", () => {
 
@@ -115,8 +100,7 @@ btnCalcul.addEventListener("click", () => {
         errorMsgAge.classList.add("alert");
         errorMsgAge.classList.add("alert-warning");
 
-    }
-    else {
+    } else {
         errorMsgAge.textContent = "";
         errorMsgAge.removeAttribute("class");
     }
@@ -124,9 +108,7 @@ btnCalcul.addEventListener("click", () => {
         errorMsgTaille.textContent = "La taille ne peut pas etre égale ou inférieure à 0"
         errorMsgTaille.classList.add("alert");
         errorMsgTaille.classList.add("alert-warning");
-    }
-
-    else {
+    } else {
         errorMsgTaille.textContent = "";
         errorMsgTaille.removeAttribute("class");
     }
@@ -134,14 +116,13 @@ btnCalcul.addEventListener("click", () => {
         errorMsgPoids.textContent = "Le poids ne peut pas etre égale ou inférieure à 0"
         errorMsgPoids.classList.add("alert");
         errorMsgPoids.classList.add("alert-warning");
-    }
-    else {
+    } else {
         errorMsgPoids.textContent = "";
         errorMsgPoids.removeAttribute("class");
     }
 
     if ((age.value < 18 || age.value > 65) && age.value > 0) {
-        errorMsgAge.textContent = "Le calcul se fait uniquement pour les adultes dont l'age est entre 18 et 65ans!";
+        errorMsgAge.textContent = "Le calcul se fait uniquement pour les adultes dont l'age est entre 18 et 65 ans!";
         errorMsgAge.classList.add("alert");
         errorMsgAge.classList.add("alert-warning");
     }
