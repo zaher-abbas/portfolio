@@ -10,6 +10,11 @@ let taille = document.getElementById("taille");
 let poids = document.getElementById("poids");
 let imc = 0;
 
+let btnCalcul = document.getElementById("btnCalc");
+let errorMsgTaille = document.getElementById("errorMsgTaille");
+let errorMsgPoids = document.getElementById("errorMsgPoids");
+let errorMsgAge = document.getElementById("errorMsgAge");
+
 
 recharger.addEventListener("click", () => {
     form.style.display = "block";
@@ -17,6 +22,16 @@ recharger.addEventListener("click", () => {
     divInfo.innerHTML = "";
     divImc.innerHTML = "";
     divResultat.removeAttribute("class");
+
+    errorMsgTaille.innerHTML = "";
+    errorMsgTaille.removeAttribute("class");
+
+    errorMsgPoids.innerHTML = "";
+    errorMsgPoids.removeAttribute("class");
+
+    errorMsgAge.innerHTML = "";
+    errorMsgAge.removeAttribute("class");
+
     age.value = 0;
     taille.value = 0;
     poids.value = 0;
@@ -52,7 +67,7 @@ function afficherResultat(imc) {
     if (imc <= 16) {
         divResultat.innerHTML = "<h2>Anorexie ou dénutrition</h2>"
         divResultat.classList.add("anorexie");
-        return
+        
     } else if (imc >= 16.5 && imc < 18.5) {
         divResultat.innerHTML = "<h2>Maigreur</h2>"
         divResultat.classList.add("maigreur");
@@ -85,12 +100,6 @@ function afficherResultat(imc) {
 
     }
 }
-
-
-let btnCalcul = document.getElementById("btnCalc");
-let errorMsgTaille = document.getElementById("errorMsgTaille");
-let errorMsgPoids = document.getElementById("errorMsgPoids");
-let errorMsgAge = document.getElementById("errorMsgAge");
 
 
 btnCalcul.addEventListener("click", () => {
