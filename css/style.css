@@ -52,8 +52,8 @@ main {
 }
 
 table {
+    margin: 5rem auto;
     width: 75%;
-    margin: 4rem auto;
     text-align: center;
     border: 0.5rem double transparent;
     border-radius: 1rem;
@@ -69,20 +69,22 @@ table caption {
 tr {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
-    gap: 3rem;
-    margin: 2rem auto;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
 }
 
 table th, td {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem;
     border-radius: 1rem;
+    padding: 1rem;
 }
 
 table th {
     font-size: 1.2rem;
+    letter-spacing: 0.2rem;
 }
 
 table td {
@@ -90,6 +92,13 @@ table td {
     border-bottom: 0.2rem solid black;
 }
 
+#db {
+    grid-column: span 2;
+}
+
+#db-text {
+    background-color: #d69e2e;
+}
 
 #front-end {
     background-color: #4CAF50;
@@ -104,7 +113,7 @@ table td {
 }
 
 #frameworks {
-    background-color: #9C27B0;
+    background-color: #805ad5;
 }
 
 
@@ -134,6 +143,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    margin: 3rem auto;
 }
 
 .main-button {
