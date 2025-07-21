@@ -5,6 +5,10 @@ body {
     line-height: 2 !important;
 }
 
+header {
+    padding: 1.5rem;
+}
+
 nav li {
     border-right: solid black 0.15rem;
     padding: 1rem;
