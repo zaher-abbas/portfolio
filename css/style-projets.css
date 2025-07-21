@@ -10,10 +10,6 @@ body {
     font-size: 0.9rem;
 }
 
-header {
-    padding: 2rem;
-}
-
 nav li {
     border-right: solid black 0.15rem;
     padding: 1rem;

@@ -5,9 +5,6 @@ body {
     line-height: 2 !important;
 }
 
-header {
-    padding: 2rem;
-}
 
 nav li {
     border-right: solid black 0.15rem;
