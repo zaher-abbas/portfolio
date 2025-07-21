@@ -175,7 +175,6 @@ section {
     background-color: white !important;
     cursor: pointer;
     transform: scale(1.2);
-    transform: translateY(-3);
     font-weight: bolder;
     font-size: 1.5rem;
     color: #3498db;
@@ -300,4 +299,8 @@ footer {
         padding: 1.5rem;
     }
 
+    table {
+        width: 85%;
+
+    }
 }
