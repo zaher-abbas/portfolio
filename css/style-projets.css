@@ -101,16 +101,6 @@ section a {
     background-color: #e0f2fe;
 }
 
-.centered-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.centered-btn button {
-    width: 100%;
-    border-radius: 15px;
-}
 
 .tech {
     display: flex;
