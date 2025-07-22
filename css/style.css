@@ -78,7 +78,7 @@ tr {
 table th, td {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 1rem;
     padding: 1rem;
 }
