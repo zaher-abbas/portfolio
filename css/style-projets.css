@@ -87,7 +87,6 @@ button {
 figure img {
     width: 100%;
     perspective: 1000px;
-
     transition: transform 0.5s ease;
     transform-style: preserve-3d;
 }
