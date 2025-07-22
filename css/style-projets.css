@@ -61,7 +61,6 @@ main section {
 
 figure img {
     width: 75%;
-    height: 75%;
     perspective: 1000px;
 
     transition: transform 0.5s ease;
