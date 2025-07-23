@@ -15,6 +15,10 @@ nav li {
     padding: 1rem;
 }
 
+#linkedin {
+    border-right: none;
+}
+
 span {
     font-size: large;
 }

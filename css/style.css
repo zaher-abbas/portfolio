@@ -18,6 +18,10 @@ nav li {
     padding: 1rem;
 }
 
+#linkedin {
+    border-right: none;
+}
+
 span {
     font-size: large;
 }
@@ -61,7 +65,7 @@ main {
 
 table {
     margin: 5rem auto;
-    width: 75%;
+    width: 60%;
     text-align: center;
     border: 0.5rem double transparent;
     border-radius: 1rem;
@@ -78,7 +82,7 @@ tr {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     gap: 2rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
     padding: 1.5rem;
 }
 
@@ -91,12 +95,11 @@ table th, td {
 }
 
 table th {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 0.2rem;
 }
 
 table td {
-    font-weight: bold;
     border-bottom: 0.2rem solid black;
 }
 
