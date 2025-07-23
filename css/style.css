@@ -5,6 +5,13 @@ body {
     line-height: 2 !important;
 }
 
+.hr > hr {
+    width: 50%;
+}
+
+.hr {
+    place-items: center;
+}
 
 nav li {
     border-right: solid black 0.15rem;
