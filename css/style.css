@@ -7,15 +7,40 @@ body {
 }
 
 
-.code-preview {
-    background: #000;
-    border: 1px solid #333;
+.code-block {
+    background: #0d1117;
+    color: #ffffff;
+    border: 1px solid #30363d;
     border-radius: 8px;
-    padding: 15px;
-    margin: 15px 0;
-    font-size: 0.85rem;
-    color: #00ff88;
-    position: relative;
+    padding: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    width: 80%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.code-block pre {
+    margin: 0;
+    white-space: pre;
+}
+
+.keyword {
+    color: #ff7b72;
+}
+
+.function {
+    color: #7ee787;
+}
+
+.string {
+    color: #a5d6ff;
+}
+
+.comment {
+    color: #8b949e;
+}
+
+.operator {
+    color: #ff7b72;
 }
 
 .hr > hr {
@@ -144,9 +169,13 @@ table td {
 section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem
 }
 
+section > h1 {
+    align-self: flex-start;
+}
 
 #moi img {
     width: 100%;
