@@ -23,8 +23,14 @@ body {
     white-space: pre;
 }
 
+code {
+    display: block;
+}
+
 .keyword {
     color: #ff7b72;
+    font-weight: bold;
+
 }
 
 .function {
@@ -169,8 +175,11 @@ table td {
 section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem
+}
+
+.code-block {
+    align-self: center;
 }
 
 section > h1 {
