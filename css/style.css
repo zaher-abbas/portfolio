@@ -101,7 +101,7 @@ main {
 
 #first-section {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 2fr 0.5fr;
+    grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
     align-items: center;
     gap: 3rem;
     margin: 3rem auto;
