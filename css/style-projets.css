@@ -49,6 +49,7 @@ main {
     justify-content: center;
     gap: 4rem;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 main section {
@@ -56,8 +57,9 @@ main section {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.5s ease;
     border-radius: 15px;
-    width: 40%;
+    width: 35%;
     background-color: #e0f2fe;
+
 }
 
 section {
@@ -251,6 +253,10 @@ footer {
     main {
         justify-content: space-around;
         gap: 2rem;
+    }
+
+    main section {
+        width: 40%;
     }
 
     figure img {
