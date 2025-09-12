@@ -64,7 +64,6 @@ code {
 }
 
 nav li {
-    border-right: solid black 0.15rem;
     padding: 1rem;
 }
 
@@ -359,6 +358,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
     #moi img {
         width: 50%;
     }

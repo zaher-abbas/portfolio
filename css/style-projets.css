@@ -12,14 +12,7 @@ body {
 }
 
 nav li {
-    border-right: solid black 0.15rem;
     padding: 1rem;
-}
-
-.navbar-nav > li {
-    width: 10rem;
-    text-align: center;
-    padding: 1rem 0;
 }
 
 #linkedin {
@@ -245,10 +238,6 @@ footer {
         width: 85%;
     }
 
-    nav li {
-        border-right: none;
-        border-bottom: solid black 0.15rem;
-    }
 
     figure img {
         width: 100%;
@@ -258,14 +247,15 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 992px) {
     main {
         justify-content: space-around;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     main section {
-        width: 40%;
+        width: 45%;
     }
 
     figure img {
         width: 100%;
     }
+
 }
