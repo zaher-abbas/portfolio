@@ -1,11 +1,17 @@
 body {
-    margin: 0;
     background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
     font-family: 'JetBrains Mono', monospace !important;
     line-height: 2 !important;
     font-size: 18px !important;
+    margin: 0;
+    width: 100%;
 }
 
+
+main {
+    margin: 5rem 0;
+
+}
 
 .code-block {
     background: #0d1117;
@@ -31,12 +37,6 @@ code {
     color: #ff7b72;
     font-weight: bold;
 
-}
-
-.navbar-nav > li {
-    width: 10rem;
-    text-align: center;
-    padding: 1rem 0;
 }
 
 .function {
@@ -99,12 +99,6 @@ span {
     }
 }
 
-
-main {
-    margin: 5rem 0;
-
-}
-
 #first-section {
     display: grid;
     grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
@@ -113,9 +107,14 @@ main {
     margin: 3rem auto;
 }
 
+#competences {
+    margin: 2rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 table {
-    margin: 5rem auto;
-    width: 60%;
     text-align: center;
     border: 0.5rem double transparent;
     border-radius: 1rem;
@@ -190,6 +189,10 @@ section {
 
 section > h1 {
     align-self: flex-start;
+}
+
+#moi {
+    text-align: center;
 }
 
 #moi img {
@@ -325,8 +328,12 @@ footer {
         flex-direction: column;
     }
 
-    #moi {
-        width: 45%;
+    #moi > img {
+        width: 50%;
+    }
+
+    td > img {
+        width: 2rem;
     }
 
     section {
@@ -352,10 +359,20 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    #moi img {
+        width: 50%;
+    }
+
+    td > img {
+        width: 2.5rem;
+    }
 
     #first-section {
-        grid-template-columns: 0.1fr 1fr 2fr 0.1fr;
-        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2rem;
     }
 
     #buttons {
@@ -367,8 +384,4 @@ footer {
         padding: 1.5rem;
     }
 
-    table {
-        width: 85%;
-
-    }
 }
