@@ -16,6 +16,12 @@ nav li {
     padding: 1rem;
 }
 
+.navbar-nav > li {
+    width: 10rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
 #linkedin {
     border-right: none;
 }
