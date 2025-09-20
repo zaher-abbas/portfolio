@@ -1,16 +1,37 @@
 body {
-    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
-    font-family: 'JetBrains Mono', monospace !important;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     line-height: 2 !important;
     font-size: 18px !important;
     margin: 0;
     width: 100%;
 }
 
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
 
 main {
     margin: 5rem 0;
 
+}
+
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #4a6741 100%);
+    margin-bottom: 0;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer-item > p {
+    margin: 0;
 }
 
 .code-block {
@@ -301,23 +322,6 @@ section > h1 {
     100% {
         border-color: #007bff;
     }
-}
-
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.footer-item p {
-    font-size: 1.5rem;
-}
-
-.footer-item a {
-    font-size: 1.5rem;
 }
 
 

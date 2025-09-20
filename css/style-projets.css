@@ -1,9 +1,31 @@
 body {
     margin: 0;
-    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
-    font-family: 'JetBrains Mono', monospace !important;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     line-height: 2 !important;
     font-size: 18px !important;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #4a6741 100%);
+    margin-bottom: 0;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer-item > p {
+    margin: 0;
 }
 
 #logo {
@@ -51,43 +73,58 @@ main {
     width: 100%;
 }
 
-main section {
-    border: 4px double transparent;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease;
-    border-radius: 15px;
-    width: 35%;
-    background-color: #e0f2fe;
-
-}
-
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 0.5rem;
+    background: linear-gradient(145deg, #1e293b 0%, #334155 100%);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s ease;
+    width: 35%;
 }
 
 section figure {
 
-    padding: 2rem;
+    height: 100%;
+}
+
+figcaption {
+    padding: 1.3rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin-bottom: 2rem;
 }
 
 .flex-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-top: 2rem;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: auto;
 }
+
+.flex-container > article {
+    flex: 0 0 150px; /* fixed height when using flex column (adjust as needed) */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* number of lines to show */
+}
+
 
 .flex-item {
     width: 80%;
+
+}
+
+.flex-item > a {
+    width: 50%;
 }
 
 button {
-    width: 100%;
+    width: 50%;
 }
 
 .figImage {
@@ -120,8 +157,6 @@ section a {
 }
 
 .tech span {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -139,30 +174,11 @@ section:hover {
     animation: borderMove 1s infinite linear;
     box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
 
-    figure h3 {
-        color: #3498db;
-    }
-
     figure img {
         transform: rotateY(45deg) rotateX(20deg) rotateZ(360deg) scale(1.15);
     }
 }
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.footer-item p {
-    font-size: 1.5rem;
-}
-
-.footer-item a {
-    font-size: 1.5rem;
-}
 
 .modal-body img {
     width: 50%;
@@ -228,6 +244,70 @@ footer {
     }
 }
 
+.html {
+    background-color: #e34f26;
+    color: white;
+}
+
+.css {
+    background-color: #1572b6;
+    color: white;
+}
+
+.javascript {
+    background-color: #f7df1e;
+    color: black;
+}
+
+.react {
+    background-color: #61dafb;
+    color: black;
+}
+
+.angular {
+    background-color: #dd0031;
+    color: white;
+}
+
+.node {
+    background-color: #339933;
+    color: white;
+}
+
+.ionic {
+    background-color: #3880ff;
+    color: white;
+}
+
+.c {
+    background-color: #239120;
+    color: white;
+}
+
+.unity {
+    background-color: #000000;
+    color: white;
+}
+
+.typescript {
+    background-color: #3178c6;
+    color: white;
+}
+
+.jwt {
+    background-color: #000000;
+    color: white;
+}
+
+.mysql {
+    background-color: #4479a1;
+    color: white;
+}
+
+.express {
+    background-color: #000000;
+    color: white;
+}
 
 @media screen and (max-width: 768px) {
     main {

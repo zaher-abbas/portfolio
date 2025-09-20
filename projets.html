@@ -21,7 +21,7 @@
 <header>
     <nav class="navbar navbar-expand-lg p-4">
         <div class="container-fluid">
-            <div class="navbar-brand d-flex gap-2 align-items-center">
+            <div class="navbar-brand d-flex gap-2 align-items-center text-light">
                 <div class="bg-success" id="logo-round"></div>
                 <h2>Zaher ABBAS</h2>
                 <span>Développeur Full-Stack</span>
@@ -37,17 +37,17 @@
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div
-                    class="collapse navbar-collapse justify-content-end"
-                    id="navbarNav"
+            <div class="collapse navbar-collapse justify-content-end"
+                 id="navbarNav"
             >
                 <ul class="navbar-nav align-items-end" id="nav-list">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><h5>Accueil</h5></a>
+                        <a class="nav-link text-light" href="index.html"><h5><i class="bi bi-card-list"></i>
+                            Acceuil</h5></a>
                     </li>
                     <li class="nav-item">
                         <a
-                                class="nav-link"
+                                class="nav-link text-light"
                                 aria-current="page"
                                 href="https://cvdesignr.com/p/60f7661fe17ff"
                         ><h5><i class="bi bi-file-person-fill"></i>
@@ -55,13 +55,13 @@
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/zaher-abbas"
+                        <a class="nav-link text-light" href="https://github.com/zaher-abbas"
                         ><h5><i class="bi bi-github"></i>
                             Github</h5></a
                         >
                     </li>
                     <li class="nav-item" id="linkedin">
-                        <a class="nav-link" href="https://www.linkedin.com/in/z83/"
+                        <a class="nav-link text-light" href="https://www.linkedin.com/in/z83/"
                         ><h5><i class="bi bi-linkedin"></i>
                             LinkedIn</h5></a
                         >
@@ -71,20 +71,47 @@
         </div>
     </nav>
 </header>
-<div class="container">
-    <hr/>
-</div>
 <main>
-    <section>
+    <section class="text-light">
+        <figure>
+            <figcaption>
+                <h3>💸Expenses APP</h3>
+                <div class="tech">
+                    <span class="ionic">Ionic</span>
+                    <span class="react">React</span>
+                    <span class="typescript">TypeScript</span>
+                </div>
+            </figcaption>
+            <div class="flex-container">
+                <div class="figImage flex-item">
+                    <img
+                            src="images/ExpensesApp.png"
+                            alt="Expenses App"
+                    />
+                </div>
+                <article class="flex-item">
+                    Une application multiplateforme simple de suivi des dépenses, développée avec Ionic React,
+                    TypeScript, Vite et Capacitor.
+                    Ajoutez vos dépenses avec leur intitulé, leur montant, leur catégorie et leur date, puis
+                    consultez-les dans une interface claire et adaptée aux appareils mobiles.
+                </article>
+                <div class="flex-item flex-a text-center">
+                    <a class="btn btn-success fw-bold btn-outline-info p-1 fs-4 rounded-pill"
+                       href="https://expenses-app-blue.vercel.app/" target="_blank">Lancer🚀</a>
+                </div>
+            </div>
+        </figure>
+    </section>
+    <section class="text-light">
         <figure>
             <figcaption>
                 <h3>🎥CineZone App</h3>
                 <div class="tech">
-                    <span>Angular</span>
-                    <span>Node.js</span>
-                    <span>Express.js</span>
-                    <span>MySQL</span>
-                    <span>JWT</span>
+                    <span class="angular">Angular</span>
+                    <span class="node">Node.js</span>
+                    <span class="express">Express.js</span>
+                    <span class="mysql">MySQL</span>
+                    <span class="jwt">JWT</span>
                 </div>
             </figcaption>
             <div class="flex-container">
@@ -99,25 +126,22 @@
                     et de gérer des films. Elle se connecte à un backend Node.js et Express.js, avec une base de données
                     MySQL.
                 </article>
-                <div class="flex-item">
-                    <button
-                            type="button"
-                            class="btn btn-success fw-bold btn-outline-warning p-1 fs-4 rounded-pill"
-                    >
-                        <a href="https://cinezone-angular.vercel.app" target="_blank">Lancer🚀</a>
-                    </button>
+                <div class="flex-item flex-a text-center">
+                    <a class="btn btn-success fw-bold btn-outline-info p-1 fs-4 rounded-pill"
+                       href="https://cinezone-angular.vercel.app" target="_blank">
+                        Lancer🚀</a>
                 </div>
             </div>
         </figure>
     </section>
-    <section>
+    <section class="text-light">
         <figure>
             <figcaption>
                 <h3>Calculateur IMC</h3>
                 <div class="tech">
-                    <span>JavaScript</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
+                    <span class="javascript">JavaScript</span>
+                    <span class="html">HTML</span>
+                    <span class="css">CSS</span>
                 </div>
             </figcaption>
             <div class="flex-container">
@@ -132,9 +156,8 @@
                     dans le cadre du projet fil rouge pour évaluer les acquises au cours
                     de la formation "Développeur web mobile" chez M2i.
                 </article>
-                <div class="flex-item">
+                <div class="flex-item text-center">
                     <button
-                            id="btnLancer"
                             type="button"
                             class="btn btn-success fw-bold btn-outline-warning p-1 fs-4 rounded-pill"
                             data-bs-toggle="modal"
@@ -248,14 +271,14 @@
             </div>
         </div>
     </div>
-    <section>
+    <section class="text-light">
         <figure>
             <figcaption>
                 <h3>Puissance 4 Le Jeu</h3>
                 <div class="tech">
-                    <span>JavaScript</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
+                    <span class="javascript">JavaScript</span>
+                    <span class="html">HTML</span>
+                    <span class="css">CSS</span>
                 </div>
             </figcaption>
             <div class="flex-container">
@@ -267,24 +290,20 @@
                     de la
                     formation « Développeur Angular » au sein de Wild Code School.
                 </article>
-                <div class="flex-item">
-                    <button
-                            type="button"
-                            class="btn btn-success fw-bold btn-outline-warning p-1 fs-4 rounded-pill"
-                    >
-                        <a href="https://zaher-abbas.github.io/Puissance-4/" target="_blank">Lancer🚀</a>
-                    </button>
+                <div class="flex-item flex-a text-center">
+                    <a class="btn btn-primary fw-bold btn-outline-info p-1 fs-4 rounded-pill"
+                       href="https://zaher-abbas.github.io/Puissance-4/" target="_blank">Lancer🚀</a>
                 </div>
             </div>
         </figure>
     </section>
-    <section>
+    <section class="text-light">
         <figure>
             <figcaption>
                 <h3>Full Control Shader</h3>
                 <div class="tech">
-                    <span>C#</span>
-                    <span>Unity</span>
+                    <span class="c">C#</span>
+                    <span class="unity">Unity</span>
                 </div>
             </figcaption>
             <div class="flex-container">
@@ -296,26 +315,24 @@
                     wanted to have properties from different shaders combined in one!
                     Full control shader has what you want.
                 </article>
-                <div class="flex-item">
-                    <button class="btn btn-primary fw-bold btn-outline-info p-1 fs-4 rounded-pill">
-                        <a
-                                target="_blank"
-                                href="https://assetstore.unity.com/packages/vfx/shaders/full-control-shader-14005"
-                        >Voir Plus 🔍</a
-                        >
-                    </button>
+                <div class="flex-item flex-a text-center">
+                    <a class="btn btn-primary fw-bold btn-outline-info p-1 fs-4 rounded-pill"
+                       target="_blank"
+                       href="https://assetstore.unity.com/packages/vfx/shaders/full-control-shader-14005"
+                    >Voir Plus 🔍</a
+                    >
                 </div>
             </div>
 
         </figure>
     </section>
-    <section>
+    <section class="text-light">
         <figure>
             <figcaption>
                 <h3>Interactive First Person Kit</h3>
                 <div class="tech">
-                    <span>C#</span>
-                    <span>Unity</span>
+                    <span class="c">C#</span>
+                    <span class="unity">Unity</span>
                 </div>
             </figcaption>
             <div class="flex-container">
@@ -328,25 +345,23 @@
                     popular indie FPS games (e.g. Amnesia, Slender)! Then this kit is
                     for you.
                 </article>
-                <div class="flex-item">
-                    <button class="btn btn-primary fw-bold btn-outline-info p-1 fs-4 rounded-pill">
-                        <a
-                                target="_blank"
-                                href="https://discussions.unity.com/t/interactive-first-person-kit-for-puzzle-horror-games/529140"
-                        >Voir Plus 🔍</a
-                        >
-                    </button>
+                <div class="flex-item flex-a text-center">
+                    <a class="btn btn-primary fw-bold btn-outline-info p-1 fs-4 rounded-pill"
+                       target="_blank"
+                       href="https://discussions.unity.com/t/interactive-first-person-kit-for-puzzle-horror-games/529140"
+                    >Voir Plus 🔍</a
+                    >
                 </div>
             </div>
         </figure>
     </section>
-    <section>
+    <section class="text-light">
         <figure>
             <figcaption>
                 <h3>Loading Component</h3>
                 <div class="tech">
-                    <span>C#</span>
-                    <span>Unity</span>
+                    <span class="c">C#</span>
+                    <span class="unity">Unity</span>
                 </div>
             </figcaption>
             <div class="flex-container">
@@ -358,32 +373,27 @@
                     for your game when switching between scenes; a loading bar
                     indicating the progress percentage of loaded content.
                 </article>
-                <div class="flex-item">
-                    <button class="btn btn-primary fw-bold btn-outline-info p-1 fs-4 rounded-pill">
-                        <a
-                                target="_blank"
-                                href="https://assetstore.unity.com/packages/tools/loading-component-7885"
-                        >Voir Plus 🔍</a
-                        >
-                    </button>
+                <div class="flex-item text-center">
+                    <a class="btn btn-primary fw-bold btn-outline-info p-1 fs-4 rounded-pill"
+                       target="_blank"
+                       href="https://assetstore.unity.com/packages/tools/loading-component-7885"
+                    >Voir Plus 🔍</a
+                    >
                 </div>
             </div>
         </figure>
     </section>
 </main>
-<div class="container">
-    <hr/>
-</div>
 <footer>
     <div class="footer-item">
-        <h1><i class="bi bi-telephone"></i></h1>
-        <p>07 58 92 50 32</p>
+        <h1><i class="bi bi-telephone text-light"></i></h1>
+        <a class="text-light" href="tel:+33758925032">07 58 92 50 32</a>
     </div>
     <div class="footer-item">
-        <h1><i class="bi bi-envelope"></i></h1>
-        <a href="mailto:z.abbas83@yahoo.com"><p>z.abbas83@yahoo.com</p></a>
+        <h1><i class="bi bi-envelope text-light"></i></h1>
+        <a class="text-light" href="mailto:z.abbas83@yahoo.com"><p>z.abbas83@yahoo.com</p></a>
     </div>
-    <div class="footer-item">
+    <div class="footer-item text-light">
         <p>© 2025 par Zaher ABBAS</p>
     </div>
 </footer>
