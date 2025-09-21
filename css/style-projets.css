@@ -96,6 +96,10 @@ figcaption {
     margin-bottom: 2rem;
 }
 
+figcaption h3 {
+    margin-bottom: 1rem;
+}
+
 .flex-container {
     display: flex;
     flex-direction: column;
