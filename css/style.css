@@ -37,6 +37,10 @@ footer {
     justify-content: center;
 }
 
+.footer-item > p {
+    margin: 0;
+}
+
 .code-block {
     background: #0d1117;
     color: #ffffff;
