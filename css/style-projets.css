@@ -24,8 +24,11 @@ footer {
     padding: 2rem;
 }
 
-.footer-item > p {
-    margin: 0;
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #logo {
