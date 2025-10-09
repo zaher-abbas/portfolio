@@ -41,11 +41,12 @@ recharger.addEventListener("click", () => {
 btnLancer.addEventListener("click", () => {
     divResultat.removeAttribute("class");
     form.style.display = "block";
+
 })
 
 
 function calcIMC(taille, poids) {
-    if (poids == 0 || taille == 0) return null;
+    if (poids === 0 || taille === 0) return null;
     taille /= 100;
 
     return poids / (taille * taille);
@@ -67,7 +68,7 @@ function afficherResultat(imc) {
     if (imc <= 16) {
         divResultat.innerHTML = "<h2>Anorexie ou dénutrition</h2>"
         divResultat.classList.add("anorexie");
-        
+
     } else if (imc >= 16.5 && imc < 18.5) {
         divResultat.innerHTML = "<h2>Maigreur</h2>"
         divResultat.classList.add("maigreur");
