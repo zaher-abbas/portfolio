@@ -221,7 +221,7 @@ section > h1 {
 }
 
 #moi img {
-    width: 100%;
+    width: 85%;
     border-radius: 50%;
     transform-style: preserve-3d;
     perspective: 1000px;
