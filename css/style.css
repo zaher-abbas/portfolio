@@ -15,7 +15,6 @@ header {
 
 main {
     margin: 5rem 0;
-
 }
 
 footer {
@@ -387,6 +386,22 @@ section > h1 {
 
     #moi img {
         width: 50%;
+    }
+
+    #db > img {
+        width: 90px;
+    }
+
+    #langages {
+        font-size: 0.9rem;
+    }
+
+    #frameworks {
+        font-size: 0.9rem;
+    }
+
+    #db-text {
+        font-size: 0.9rem;
     }
 
     td > img {
