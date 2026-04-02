@@ -4,6 +4,7 @@ body {
     font-size: 18px !important;
     margin: 0;
     width: 100%;
+    box-sizing: border-box;
 }
 
 header {

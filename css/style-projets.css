@@ -178,7 +178,7 @@ section h3 {
 }
 
 section:hover {
-    transform: translateY(-5px) scale(1.1);
+    transform: translateY(-3px) scale(1.03);
     border-color: #007bff;
     border-width: 0.3rem;
     animation: borderMove 1s infinite linear;
@@ -312,6 +312,16 @@ section:hover {
     color: white;
 }
 
+.php {
+    background-color: #5C63A8;
+    color: white;
+}
+
+.mongodb {
+    background-color: #47a248;
+    color: white;
+}
+
 .express {
     background-color: #000000;
     color: white;
@@ -345,5 +355,4 @@ section:hover {
     figure img {
         width: 100%;
     }
-
 }
