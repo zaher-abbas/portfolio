@@ -26,6 +26,10 @@ footer {
     gap: 0;
 }
 
+#copyright {
+    padding-bottom: 0.7rem;
+}
+
 .footer-item {
     display: flex;
     flex-direction: column;
