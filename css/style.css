@@ -335,6 +335,11 @@ section > h1 {
         flex-direction: column;
     }
 
+    table tr {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     #moi > img {
         width: 50%;
     }
